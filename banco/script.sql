@@ -59,18 +59,14 @@ CREATE TABLE aluno_turma (
     FOREIGN KEY (turma_id) REFERENCES turmas(id) ON DELETE CASCADE
 );
 
--- =======================
--- PROFESSORES
--- =======================
+
 CREATE TABLE professores (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(100) NOT NULL UNIQUE
 );
 
--- =======================
--- MATÉRIAS
--- =======================
+
 CREATE TABLE materias (
     id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
